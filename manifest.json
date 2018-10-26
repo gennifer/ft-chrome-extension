@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Flashtalking Chrome Extension",
+    "description": "putting the flash back in flashtalking",
+    "version": "1.1",
+    "author": "gennifer gates",
+    "icons":
+    {
+        "48": "ftquotes.png"
+    },
+    "browser_action":
+    {
+        "default_icon": "ftquotes.png"
+    },
+    "content_scripts": [
+    {
+        "matches": [
+            "https://creativepreview.flashtalking.net/*"
+        ],
+        "js": [
+            "content.js"
+        ],
+        "run_at": "document_end"
+    }]
+}

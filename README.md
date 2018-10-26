@@ -1,0 +1,1 @@
+This Chrome extension replaces FT Preview page elements with links to CRM.
