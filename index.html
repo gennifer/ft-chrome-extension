@@ -3,12 +3,25 @@
 
 <head></head>
 
-<body>
+<body style="width:300px;">
     <button id="test">PULL MANIFEST</button>
+    <br>
+    <form id="selectorForm">
+        Select which items to copy:
+        <br>
+        <input type="checkbox" name="versionName"> Version Name<br>
+        <input type="checkbox" name="versionID"> Version ID<br>
+        <!-- will need to add in creative copying for basefiles too
+    <input type="checkbox" name="creativeFileName"> Creative File Name<br>
+    <input type="checkbox" name="creativeID"> Creative ID<br>
+    -->
+        <input type="submit" value="Submit" id="subClicked">
+    </form>
     <!-- <script src="js/Blob.js"></script>
     <script src="js/FileSaver.min.js"></script>
     <script src="js/jszip.min.js"></script> -->
     <script src="js/popup.js"></script>
+    <script src="js/copier.js"></script>
 </body>
 
 </html>
